@@ -1,0 +1,2 @@
+const t=require("./data/countries.json"),e={getAll:()=>t,getByISO:e=>t.find((t=>t.iso===e))},i=require("./data/states.json"),s={getAll:()=>i,getOne:t=>i.find((e=>e.state_code===t)),getByCountry:t=>i.filter((e=>e.country_code===t))},n=require("./data/cities.json"),r=require("./data/states+cities.json"),o={getAll:()=>n,getByState:(t,e)=>{const i=r.find((i=>i.state_code===t&&i.country_code===e));return i?i.cities:[]},getByStateId:t=>{const e=r.find((e=>e.id===t));return e?e.cities:[]}};export{o as City,e as Country,s as State};
+//# sourceMappingURL=index.esm.js.map

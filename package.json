@@ -1,0 +1,67 @@
+{
+  "name": "country-state-city",
+  "version": "1.0.0",
+  "description": "Access to Countries, States, and Cities in your JavaScript application.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c && cp-cli ./src/data ./dist/data",
+    "clean": "rm -rf dist",
+    "cleanBuild": "npm run clean && npm run build",
+    "filter": "node ./src/filterData.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gs-rumana/country-state-city.git"
+  },
+  "keywords": [
+    "country",
+    "package",
+    "state",
+    "package",
+    "city",
+    "package",
+    "country-state-city",
+    "package",
+    "get",
+    "city",
+    "get",
+    "city",
+    "from",
+    "state",
+    "get",
+    "state",
+    "from",
+    "country",
+    "get",
+    "all",
+    "countries",
+    "country",
+    "state",
+    "city"
+  ],
+  "author": {
+    "email": "gursahb7@gmail.com",
+    "name": "GS Rumana",
+    "url": "https://gs-rumana.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gs-rumana/country-state-city/issues"
+  },
+  "homepage": "https://github.com/gs-rumana/country-state-city#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "cp-cli": "^2.0.0",
+    "rollup": "^4.21.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.7.0",
+    "typescript": "^5.6.2"
+  }
+}

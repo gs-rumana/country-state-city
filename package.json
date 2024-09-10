@@ -1,5 +1,5 @@
 {
-  "name": "country-state-city",
+  "name": "platz",
   "version": "1.0.0",
   "description": "Access to Countries, States, and Cities in your JavaScript application.",
   "main": "dist/index.cjs.js",
